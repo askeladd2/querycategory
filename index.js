@@ -8,7 +8,7 @@ require('dotenv').config();
 const app = express();
 const PORT = 3434;
 
-const token = '8138011946:AAG61ns1-Uq1J6PnRm3e4fSSTW1HPbzY9zc';
+const token = process.env.TELEGRAM_BOT_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
 
 
